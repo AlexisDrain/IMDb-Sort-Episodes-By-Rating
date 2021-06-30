@@ -1,18 +1,18 @@
 {
 
-  "description": "Allow sorting show episodes by rating on IMDb.",
+  "description": "Add a button to sort tv show episodes by rating on IMDb.com",
   "manifest_version": 2,
   "name": "IMDb-Sort-Episodes-By-Rating",
   "version": "1.0",
   "author":"JesseDrain",
   "homepage_url": "https://github.com/JesseDrain/IMDb-Sort-Episodes-By-Rating",
   "icons": {
-    "128": "icons/favicon_144.png"
+    "128": "icons/favicon_128.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*.imdb.com/title/?/episodes?"],
+      "matches": ["*://*.imdb.com/*"],
       "js": ["browser-polyfill.js","contentscript.js"]
     }
   ]
