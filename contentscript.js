@@ -9,16 +9,16 @@
 
 function checkButtonWasNotDeleted() {
   if(!document.getElementById("Sort by Rating")){
-    addButton('Sort by Rating', sortByRating)
+    addButton(sortByRating)
   }
 }
 
-function addButton(text, onclick, cssObj) {
+function addButton(onclick, cssObj) {
     cssObj = cssObj || {"float":"right", "margin-right":"1em", "font-size": "0.50em", 'z-index': 3}
     let button = document.createElement('button'), btnStyle = button.style
     document.getElementById("episode_top").appendChild(button)
-    button.innerHTML = text
-    button.id = text
+    button.innerHTML = 'Sort by Rating'
+    button.id = 'Sort by Rating'
     button.onclick = onclick
     Object.keys(cssObj).forEach(key => btnStyle[key] = cssObj[key])
     return button
