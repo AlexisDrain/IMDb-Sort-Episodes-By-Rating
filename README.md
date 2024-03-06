@@ -1,4 +1,5 @@
 # IMDb Sort Episodes By Rating  
+[3/5/2024] Update: extension now works with new IMDb redesign  
 [12/10/2023] Update: extension now works with the new IMDb redesign  
 
 IMDb extension for sorting episodes by rating.  

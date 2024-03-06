@@ -17,9 +17,9 @@ function checkButtonWasNotDeleted() {
   }
 }
 function checkMainButtonIsLast() {
-  if(document.querySelector(".sc-bb8e8454-0.hshVlp").lastChild.id !== "Sort-by-Rating-Div") {
+  if(document.querySelector(".sc-56501f3b-0.iZwhod").lastChild.id !== "Sort-by-Rating-Div") {
     console.log("resort button was not last: Sort again");
-    document.querySelector(".sc-bb8e8454-0.hshVlp").appendChild(mainDiv);
+    document.querySelector(".sc-56501f3b-0.iZwhod").appendChild(mainDiv);
   }
 }
 
@@ -33,7 +33,7 @@ function addSortButton() {
   mainDiv.style.borderLeft = "4px solid #f5c518";
   mainDiv.style.padding = "10px";
   mainDiv.onclick = sortByRating;
-  document.querySelector(".sc-bb8e8454-0.hshVlp").appendChild(mainDiv);
+  document.querySelector(".sc-56501f3b-0.iZwhod").appendChild(mainDiv);
 
   mainCheckbox = document.createElement('input')
   mainCheckbox.type = "checkbox";
@@ -58,14 +58,14 @@ function disableSort() {
   currentlySortedByRating = false;
   mainCheckbox.checked = false;
    // make sure this is the last element (appending a child that already exists sorts it)
-  document.querySelector(".sc-bb8e8454-0.hshVlp").appendChild(mainDiv);
+  document.querySelector(".sc-56501f3b-0.iZwhod").appendChild(mainDiv);
 }
 
 function sortByRating() {
   
-  parent = document.querySelector(".sc-58f3e8aa-0.cLMIyf");
+  parent = document.querySelector(".sc-7b9ed960-0.jNjsLo");
   
-  var sortButton = document.querySelector("#Sort-by-Rating");
+  // var sortButton = document.querySelector("#Sort-by-Rating");
   currentlySortedByRating = !currentlySortedByRating; // toggle
   
   mainCheckbox.checked = currentlySortedByRating;
@@ -102,9 +102,9 @@ function sortByRating() {
   }
 }
 
-var seasonBar = document.querySelector(".sc-bb8e8454-0.hshVlp");
 
 // we are in a page with a season bar. init extension
+var seasonBar = document.querySelector(".sc-56501f3b-0.iZwhod");
 if(seasonBar) {
    // Refresh page when season button is clicked
    const observer = new MutationObserver(refreshPage);

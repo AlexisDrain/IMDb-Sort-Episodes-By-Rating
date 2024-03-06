@@ -3,7 +3,7 @@
   "description": "Add a button to sort tv show episodes by rating on IMDb.com",
   "manifest_version": 3,
   "name": "IMDb Sort Episodes By Rating",
-  "version": "1.20",
+  "version": "1.21",
   "author":"AlexisDrain",
   "homepage_url": "https://github.com/AlexisDrain/IMDb-Sort-Episodes-By-Rating",
   "icons": {
